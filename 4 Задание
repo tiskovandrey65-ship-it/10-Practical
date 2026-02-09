@@ -1,0 +1,19 @@
+print("Кассовый аппарат")
+
+total = 0
+
+while True:
+    price = int(input("Введите цену ваших покупок:"))
+
+    if price == 0:
+        break
+    elif price < 0:
+        print("Ошибка цены. Введите снова")
+        continue
+    else:
+        total = total + price
+
+    if total > 1000:
+        total = total * 0.9
+
+    print("Общая цена:", total)
