@@ -1,0 +1,13 @@
+print("Рекордсмен")
+max_num = 0
+
+while True:
+    n= int(input("Введи число:"))
+
+    if n == 0:
+        break
+    elif n > max_num:
+        max_num = n
+    else:
+        max_num = max_num
+print(max_num)
